@@ -1,0 +1,34 @@
+# Set these in Railway's project → Variables tab. Never commit real values.
+
+APP_ENV=test
+
+# --- Firebase Admin SDK ---
+# From Firebase console: Project settings → Service accounts → Generate new
+# private key. Paste the ENTIRE downloaded JSON as a single-line string here.
+FIREBASE_SERVICE_ACCOUNT_JSON=
+
+# --- NOWPayments ---
+NOWPAYMENTS_API_KEY=
+NOWPAYMENTS_IPN_SECRET=
+
+# --- Telegram ---
+TELEGRAM_BOT_TOKEN=
+# A random, hard-to-guess string — the webhook URL registered with
+# Telegram includes this as a path segment: /api/telegram/webhook/<this>
+TELEGRAM_WEBHOOK_SECRET=
+
+# --- Groq ---
+GROQ_API_KEY=
+# Must be a Groq PRODUCTION-designated model, not a preview model (preview
+# models can be discontinued with short notice). Confirm current
+# production models in Groq's docs before deploying.
+GROQ_MODEL=llama-3.3-70b-versatile
+
+# Port Railway assigns automatically — you usually don't need to set this
+# yourself, Railway injects it, but the app reads it either way.
+PORT=3000
+
+# The public HTTPS URL Railway assigns this service (e.g.
+# https://michael-backend-test.up.railway.app). Used to tell NOWPayments
+# where to send webhook events for each invoice.
+PUBLIC_BASE_URL=
