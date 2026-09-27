@@ -33,7 +33,8 @@ function initFirebaseAdmin() {
   }
 
   return admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
+    credential: admin.credential.cert(serviceAccount),
+    projectId: serviceAccount.project_id
   });
 }
 
