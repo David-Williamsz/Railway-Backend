@@ -65,5 +65,5 @@ export function buildPromptMessages({ profileSummary, recentMessages, currentMes
 }
 
 export function getFirstMessageDisclosure() {
-  return "Hi, I'm Michael's AI assistant. He's not always online, but I can answer questions about what he does and help you get in touch with him. (This chat may be logged so Michael can follow up.)";
+  return "Hi, I'm Michael's AI assistant. He's not online right now, but I can answer questions about what he does and help you get in touch with him. (This chat may be logged so Michael can follow up.)";
 }
